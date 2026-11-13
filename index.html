@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Foto de perfil Seazone | Franquias</title>
+<meta name="description" content="Crie sua foto de perfil com a casinha da Seazone ao fundo.">
+<style>
+  :root { --navy:#00143D; --coral:#FC6058; --bg:#F3F3F5; --txt:#141A3C; --muted:#6B6E84; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--txt); }
+  header { background:var(--navy); color:#fff; padding:18px 20px; display:flex; align-items:center; gap:12px; }
+  header svg { height:26px; width:auto; }
+  header h1 { font-size:16px; font-weight:600; margin:0; opacity:.9; }
+  main { max-width:520px; margin:0 auto; padding:16px; }
+  .card { background:#fff; border-radius:16px; padding:16px; margin-bottom:14px; box-shadow:0 1px 3px rgba(0,20,61,.08); }
+  .step { font-size:12px; font-weight:700; color:var(--coral); text-transform:uppercase; letter-spacing:.06em; margin-bottom:6px; }
+  h2 { font-size:17px; margin:0 0 10px; }
+  p.hint { font-size:13px; color:var(--muted); margin:6px 0 0; line-height:1.4; }
+  .btn { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:14px; border-radius:12px; border:0; font-size:16px; font-weight:600; cursor:pointer; }
+  .btn-primary { background:var(--coral); color:#fff; }
+  .btn-dark { background:var(--navy); color:#fff; }
+  .btn-ghost { background:#fff; color:var(--navy); border:1.5px solid var(--navy); }
+  .btn:disabled { opacity:.45; cursor:not-allowed; }
+  .row { display:flex; gap:8px; }
+  .row > * { flex:1; }
+  .opt { padding:10px 8px; border-radius:10px; border:1.5px solid #E6E7EA; background:#fff; font-size:14px; cursor:pointer; text-align:center; color:var(--txt); }
+  .opt.on { border-color:var(--coral); background:#FFF1F0; font-weight:600; }
+  .opt { display:flex; align-items:center; justify-content:center; gap:8px; }
+  .dot { width:18px; height:18px; border-radius:50%; display:inline-block; }
+  .preview-wrap { position:relative; width:100%; aspect-ratio:1; border-radius:12px; overflow:hidden; background:#ddd; touch-action:none; }
+  .preview-wrap canvas { width:100%; height:100%; display:block; cursor:grab; }
+  .circle-guide { position:absolute; inset:0; pointer-events:none; border-radius:50%; box-shadow:0 0 0 9999px rgba(0,0,0,.45); display:none; }
+  .preview-wrap.guide .circle-guide { display:block; }
+  .label { font-size:13px; color:var(--muted); margin:12px 0 6px; display:flex; justify-content:space-between; }
+  input[type=range] { width:100%; accent-color:var(--coral); }
+  .hidden { display:none !important; }
+  ol { padding-left:18px; margin:6px 0 0; font-size:14px; line-height:1.6; }
+  footer { text-align:center; font-size:12px; color:var(--muted); padding:8px 16px 28px; }
+  .check { display:flex; align-items:center; gap:8px; font-size:14px; margin-top:10px; }
+</style>
+</head>
+<body>
+<header>
+  <svg viewBox="69.4 0 41.3 42.3" aria-hidden="true"><path id="house-src" fill="#FC6058" d="M109.176 13.0945L101.834 8.77302C101.85 8.6705 101.897 8.57587 101.897 8.47335V1.95569C101.897 0.87533 101.021 0 99.9396 0H96.0239C94.9424 0 94.0661 0.87533 94.0661 1.95569V4.23076L91.4017 2.67331C90.3202 2.02667 88.8953 2.13707 87.8927 2.87834L87.8413 2.89805L70.9512 12.6844C69.542 13.5242 68.9539 15.476 69.8302 16.9388C70.738 18.4568 72.7393 18.8669 74.1445 18.0271L75.155 17.4435C73.959 19.7817 73.2129 22.4234 73.2129 25.3057C73.2129 29.8637 74.9655 34.3547 78.2022 37.5919C79.4732 38.8654 80.9534 39.93 82.5758 40.7147C83.8231 41.3179 85.1414 41.8226 86.5111 42.075C88.3269 42.4062 90.2057 42.2366 92.0412 42.2406C94.0227 42.2406 96.0081 42.2445 97.9897 42.2485C99.7856 42.2524 101.582 42.2603 103.397 42.2642C103.851 42.2642 104.297 42.146 104.7 41.9409C105.217 41.6768 105.525 41.3889 105.864 40.9355C106.251 40.4229 106.52 39.8039 106.52 39.1414V18.6225C107.866 19.1074 109.5 18.6855 110.301 17.3449C111.177 15.8821 110.589 13.9304 109.176 13.0905M100.729 25.629C100.729 31.8667 96.5015 36.9374 90.1268 36.9374C83.752 36.9374 79.0667 31.5434 79.0667 25.3057C79.0667 19.068 83.752 13.8712 90.1268 13.8712C96.5015 13.8712 100.729 18.6816 100.729 24.8523V25.633V25.629Z"/></svg>
+  <h1>Foto de perfil Seazone · Franquias</h1>
+</header>
+
+<main>
+  <div class="card">
+    <div class="step">Passo 1</div>
+    <h2>Escolha sua foto</h2>
+    <input type="file" id="file" accept="image/*" class="hidden">
+    <button class="btn btn-primary" id="pick">📷 Escolher foto da galeria</button>
+    <p class="hint">Use uma foto sua de frente, com boa luz, de preferência da cintura para cima. A foto não é alterada nem enviada para ninguém: tudo acontece no seu próprio celular.</p>
+  </div>
+
+  <div class="card hidden" id="editor">
+    <div class="step">Passo 2</div>
+    <h2>Monte sua foto</h2>
+
+    <p class="hint" style="margin-top:0">Arraste a foto com o dedo para centralizar o rosto. A área clara é o que aparece no WhatsApp.</p>
+
+    <div style="height:10px"></div>
+    <div class="preview-wrap guide" id="wrap">
+      <canvas id="cv" width="1080" height="1080"></canvas>
+      <div class="circle-guide"></div>
+    </div>
+
+    <div class="label"><span>Tamanho da foto</span><span id="zoom-val">100%</span></div>
+    <input type="range" id="zoom" min="100" max="300" value="100">
+
+    <div class="label"><span>Cor</span></div>
+    <div class="row" id="themes">
+      <button class="opt on" data-bg="#00143D" data-house="#FC6058"><span class="dot" style="background:#00143D"></span> Azul</button>
+      <button class="opt" data-bg="#FC6058" data-house="#00143D"><span class="dot" style="background:#FC6058"></span> Vermelho</button>
+    </div>
+
+    <div style="height:14px"></div>
+    <div class="row">
+      <button class="btn btn-ghost" id="reset">↺ Centralizar</button>
+      <button class="btn btn-ghost" id="repick">Trocar foto</button>
+    </div>
+    <div style="height:10px"></div>
+    <button class="btn btn-primary" id="done">✓ Pronto, gerar minha foto</button>
+  </div>
+
+  <div class="card hidden" id="save">
+    <div class="step">Passo 3</div>
+    <h2>Salve no celular</h2>
+    <img id="result" alt="Sua foto de perfil Seazone" style="width:100%;border-radius:12px;display:block;-webkit-touch-callout:default">
+    <p class="hint" style="text-align:center;font-weight:600;color:var(--txt)">👆 Toque e segure na foto acima e escolha <b>Salvar imagem</b> (ou "Adicionar a Fotos").</p>
+    <div style="height:10px"></div>
+    <div class="row">
+      <button class="btn btn-primary hidden" id="share">Compartilhar / Salvar</button>
+      <button class="btn btn-dark" id="download">⬇ Baixar</button>
+    </div>
+    <p class="hint">Não salvou? Abra este link no <b>Chrome</b> ou no <b>Safari</b> (no WhatsApp, toque nos ⋮ ou no ícone de bússola → "Abrir no navegador").</p>
+    <h2 style="margin-top:16px">Coloque no WhatsApp</h2>
+    <ol>
+      <li>Abra o WhatsApp Business → <b>Configurações</b> → <b>Ferramentas comerciais</b> → <b>Perfil comercial</b>.</li>
+      <li>Toque na foto de perfil → <b>Editar</b> → escolha a foto que você salvou.</li>
+    </ol>
+  </div>
+</main>
+
+<footer>Seazone · Relacionamento com Franquias</footer>
+
+<script>
+const SIZE = 1080;
+const cv = document.getElementById('cv');
+const ctx = cv.getContext('2d');
+const HOUSE = new Path2D(document.getElementById('house-src').getAttribute('d'));
+// caixa da casinha no SVG original e o centro do "furo" redondo dela
+const HB = { x: 69.45, y: 0, w: 41.2, h: 42.3 };
+const HOLE = { cx: 89.9, cy: 25.4 };
+
+// casinha grande ocupando o fundo; o círculo da foto fica no lugar do furo da casinha
+const HS = 980 / HB.h;
+const HT = { s: HS, tx: SIZE / 2 - (HB.x + HB.w / 2) * HS, ty: 55 };
+const CIRCLE = { x: HT.tx + HOLE.cx * HS, y: HT.ty + HOLE.cy * HS, r: 318, ring: 16 };
+
+const state = { bg: '#00143D', house: '#FC6058', photo: null, zoom: 1, dx: 0, dy: 0 };
+const $ = id => document.getElementById(id);
+
+// ---------- escolha de foto ----------
+$('pick').onclick = $('repick').onclick = () => $('file').click();
+$('file').onchange = async e => {
+  const f = e.target.files[0];
+  e.target.value = ''; // permite escolher a mesma foto de novo
+  if (!f) return;
+  $('pick').textContent = 'Abrindo foto…';
+  try { state.photo = await loadImage(f); }
+  catch { alert('Não consegui abrir essa foto. Tente outra foto da galeria.'); return; }
+  finally { $('pick').textContent = '📷 Escolher foto da galeria'; }
+  $('editor').classList.remove('hidden');
+  resetPos(); draw();
+  $('editor').scrollIntoView({ behavior: 'smooth' });
+};
+
+async function loadImage(file) {
+  // <img> já respeita a rotação da foto do celular (EXIF)
+  const url = URL.createObjectURL(file);
+  try {
+    const img = await new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = url; });
+    // fotos de celular têm 12-48 MP: reduz para 1600px para não travar nem estourar a memória do iPhone
+    const k = Math.min(1, 1600 / Math.max(img.naturalWidth, img.naturalHeight));
+    const c = document.createElement('canvas');
+    c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k);
+    const g = c.getContext('2d'); g.imageSmoothingQuality = 'high';
+    g.drawImage(img, 0, 0, c.width, c.height);
+    return c;
+  } finally { URL.revokeObjectURL(url); }
+}
+
+// ---------- desenho ----------
+// foto preenche o círculo (sem distorcer nem alterar a imagem); zoom e arraste só enquadram
+function photoRect() {
+  const p = state.photo, d = CIRCLE.r * 2;
+  const k = Math.max(d / p.width, d / p.height) * state.zoom;
+  const w = p.width * k, h = p.height * k;
+  // limita o arraste para a foto sempre cobrir o círculo inteiro
+  const mx = (w - d) / 2, my = (h - d) / 2;
+  state.dx = Math.max(-mx, Math.min(mx, state.dx));
+  state.dy = Math.max(-my, Math.min(my, state.dy));
+  return { x: CIRCLE.x - w / 2 + state.dx, y: CIRCLE.y - h / 2 + state.dy, w, h };
+}
+
+function render(c) {
+  c.clearRect(0, 0, SIZE, SIZE);
+  c.fillStyle = state.bg; c.fillRect(0, 0, SIZE, SIZE);
+  c.save(); c.translate(HT.tx, HT.ty); c.scale(HT.s, HT.s);
+  c.fillStyle = state.house; c.fill(HOUSE, 'evenodd');
+  c.restore();
+
+  // borda branca, como no perfil do WhatsApp dos exemplos
+  c.save();
+  c.shadowColor = 'rgba(0,0,0,.18)'; c.shadowBlur = 20;
+  c.beginPath(); c.arc(CIRCLE.x, CIRCLE.y, CIRCLE.r + CIRCLE.ring, 0, Math.PI * 2);
+  c.fillStyle = '#FFFFFF'; c.fill();
+  c.restore();
+
+  c.save();
+  c.beginPath(); c.arc(CIRCLE.x, CIRCLE.y, CIRCLE.r, 0, Math.PI * 2); c.clip();
+  if (state.photo) {
+    const r = photoRect();
+    c.imageSmoothingQuality = 'high';
+    c.drawImage(state.photo, r.x, r.y, r.w, r.h);
+  } else { c.fillStyle = '#E6E7EA'; c.fill(); }
+  c.restore();
+}
+function draw() {
+  render(ctx);
+  if (!$("save").classList.contains("hidden")) { $("save").classList.add("hidden"); finalBlob = null; }
+}
+
+// ---------- controles ----------
+function resetPos() { state.zoom = 1; state.dx = 0; state.dy = 0; $('zoom').value = 100; $('zoom-val').textContent = '100%'; }
+$('reset').onclick = () => { resetPos(); draw(); };
+$('zoom').oninput = e => { state.zoom = e.target.value / 100; $('zoom-val').textContent = e.target.value + '%'; draw(); };
+
+// só as cores da marca: Azul (fundo azul + casinha vermelha) ou Vermelho (fundo vermelho + casinha azul)
+document.querySelectorAll('#themes .opt').forEach(b => b.onclick = () => {
+  document.querySelectorAll('#themes .opt').forEach(x => x.classList.toggle('on', x === b));
+  state.bg = b.dataset.bg; state.house = b.dataset.house; draw();
+});
+
+// arrastar (mouse ou dedo) e pinça para zoom
+const pts = new Map(); let pinch0 = null;
+cv.addEventListener('pointerdown', e => { cv.setPointerCapture(e.pointerId); pts.set(e.pointerId, { x: e.clientX, y: e.clientY }); if (pts.size === 2) pinch0 = { d: pinchDist(), z: state.zoom }; });
+cv.addEventListener('pointermove', e => {
+  if (!pts.has(e.pointerId) || !state.photo) return;
+  const prev = pts.get(e.pointerId); const k = SIZE / cv.clientWidth;
+  pts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  if (pts.size === 2 && pinch0) {
+    state.zoom = Math.max(1, Math.min(3, pinch0.z * pinchDist() / pinch0.d));
+    $('zoom').value = Math.round(state.zoom * 100); $('zoom-val').textContent = $('zoom').value + '%';
+  } else if (pts.size === 1) {
+    state.dx += (e.clientX - prev.x) * k; state.dy += (e.clientY - prev.y) * k;
+  }
+  draw();
+});
+const up = e => { pts.delete(e.pointerId); if (pts.size < 2) pinch0 = null; };
+cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', up);
+function pinchDist() { const [a, b] = [...pts.values()]; return Math.hypot(a.x - b.x, a.y - b.y); }
+
+// ---------- salvar ----------
+// a foto final aparece como imagem na tela: "toque e segure → Salvar imagem" funciona
+// em qualquer celular, inclusive no navegador de dentro do WhatsApp/Instagram
+let finalBlob = null;
+function makeFinal() {
+  const c = document.createElement('canvas'); c.width = c.height = SIZE;
+  render(c.getContext('2d'));
+  $('result').src = c.toDataURL('image/jpeg', 0.92);
+  return new Promise(r => c.toBlob(b => { finalBlob = b; r(b); }, 'image/jpeg', 0.92));
+}
+$('done').onclick = async () => {
+  if (!state.photo) return;
+  await makeFinal();
+  $('save').classList.remove('hidden');
+  $('save').scrollIntoView({ behavior: 'smooth' });
+};
+$('download').onclick = async () => {
+  const blob = finalBlob || await makeFinal();
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = 'foto-perfil-seazone.jpg';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+};
+if (navigator.canShare && navigator.canShare({ files: [new File([''], 'x.jpg', { type: 'image/jpeg' })] })) {
+  $('share').classList.remove('hidden');
+  $('share').onclick = async () => {
+    const file = new File([finalBlob || await makeFinal()], 'foto-perfil-seazone.jpg', { type: 'image/jpeg' });
+    try { await navigator.share({ files: [file] }); } catch {}
+  };
+}
+
+draw();
+</script>
+</body>
+</html>
